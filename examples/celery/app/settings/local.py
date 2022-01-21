@@ -20,3 +20,9 @@ SQLALCHEMY_DATABASE_URI = (
 class Celery:
     broker_url = "amqp://strong_user:strong_password@localhost:5672/celery_vhost"
     result_backend = "redis://localhost:6900/0"
+    beat_schedule = {
+        "add-every-10-seconds": {
+            "task": "app.tasks.say_hello",
+            "schedule": 10,
+        }
+    }
