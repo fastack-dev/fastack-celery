@@ -9,6 +9,7 @@ fastack-sqlmodel = "*"
 fastack-migrate = "*"
 psycopg2-binary = "*"
 redis = "*"
+flower = "*"
 
 [dev-packages]
 pre-commit = "*"
