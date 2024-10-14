@@ -16,6 +16,7 @@ SQLALCHEMY_DATABASE_URI = (
 )
 # SQLALCHEMY_OPTIONS = {"echo": True}
 
+
 # celery configuration
 class Celery:
     broker_url = "amqp://strong_user:strong_password@localhost:5672/celery_vhost"
